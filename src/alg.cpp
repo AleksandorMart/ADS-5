@@ -93,7 +93,7 @@ return stoi(first);
 }
 
 int eval(std::string pref) {
-TStack <int, 5> sstack;
+TStack <int> sstack(5);
 int i = 0;
 std::string number;
 int first;
