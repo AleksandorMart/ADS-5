@@ -2,17 +2,17 @@
 #ifndef INCLUDE_TSTACK_H_
 #define INCLUDE_TSTACK_H_
 
-template<typename T, int size1>
+template<typename T>
 class TStack {
  private:
   int size;
   int locSize;
   T* arr;
  public:
-  TStack() {
-   this->size = size1;
-   this->arr = new T[size];
-   this->locSize = -1;
+  TStack(int size1) {
+   size = size1;
+   arr = new T[size];
+   locSize = -1;
   }
 
 ~TStack() {
