@@ -18,7 +18,7 @@ return -1;
 std::string infx2pstfx(std::string inf) {
 std::string result = "";
 int i = 0;
-TStack <char, 5> fstack;
+TStack <char> fstack(5);
 while (i < inf.length()) {
 if (priority(inf[i]) == -1) {
 result += inf[i];
